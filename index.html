@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <table  align="center" border="1">
+            <tr>
+                <td>Team A</td>
+                <td colspan="3">BoozeHounds-BeerPong</td>
+                <td>Team B</td>
+            </tr>
+
+            <tr>
+                <td id="drinks_remaining_a"></td>
+                <td colspan="3">Drinks</td>
+                <td id="drinks_remaining_b"></td>
+            </tr>
+
+            <tr>
+                <td id="bads_a"></td>
+                <td colspan="3">Bads</td>
+                <td id="bads_b"></td>
+            </tr>
+
+            <tr>
+                <td id="a_pos"></td>
+                <td colspan="3">POS</td>
+                <td id="b_pos"></td>
+            </tr>
+
+            <tr>
+                <td colspan="5">Serves</td>
+            </tr>
+
+            <tr>
+                <td colspan="5" id="serves"></td>
+            </tr>
+
+        </table>
+
+
+        <hr>
+
+        <table align="center" border="1">
+            <tr>
+                <td>
+                    Team A
+                </td>
+                <td>
+                    Team B
+                </td>
+
+            </tr>
+            <tr>
+                <td><button onclick="a_bad()">A Bad</button></td>
+                <td><button onclick="b_bad()">B Bad</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="a_sips()">A Drinks</button></td>
+                <td><button onclick="b_sips()">B Drinks</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="a_finish()">A Finish</button></td>
+                <td><button onclick="b_finish()">B Finish</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="serve()">Serve</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="switch_pos()">Switch</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="reset_game()">Reset Game</button></td>
+            </tr>
+        </table>
+
+
+
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/scoreboard.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-25593961-5'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
